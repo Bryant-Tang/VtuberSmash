@@ -1,7 +1,7 @@
 from typing import List
+import webbrowser
 from gui_components import Scene, RoundButton, TextButton, MouseEventAdapter, Component, BaseButton
 from game_resource import image, constants
-import webbrowser
 from thread_management import ThreadManager
 from decorator import singleton
 

@@ -1,16 +1,15 @@
 import math
 import random
-from thread_management import ThreadManager
 from typing import List, Tuple, Union
+from pygame import time as pygame_time, mouse as pygame_mouse
+from thread_management import ThreadManager
 from gui_components import Scene, Component, TextButton, MouseEventAdapter, Surface, Label
 from game_logic import ChooseCard, Battle, PlayerAttributeRecord
 from game_resource import image, constants, audio
-from pygame import time as pygame_time, mouse as pygame_mouse
 from game_element import Card, Player, CardEffect, PlayerEffect, player_factory, card_factory
 from network import CommunicateData
-
-from .game import Game
 from decorator import singleton
+from .game import Game
 from .delay import delay
 
 
